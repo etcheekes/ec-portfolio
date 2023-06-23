@@ -1,0 +1,18 @@
+<div class="contact-container">
+    <form class="contact-form" method="post">
+        <div class="contact-form-intro">
+            <h2 class="contact-form-title">Get in touch</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper condimentum eros, porttitor vehicula mauris facilisis in. Sed in accumsan tortor. In auctor fringilla ante ac tristique. Praesent congue tortor sapien, sed dignissim purus accumsan eu. Praesent imperdiet quam ac nibh lobortis fringilla. Ut consectetur nisl dictum, luctus tellus in, accumsan nunc. Mauris tristique nisi non nibh tempor vulputate.</p>
+        </div>
+        {% for item in form %}
+            {% if item.inputType == "textarea" %}
+                <label class="contact-form-label" for="{{ item.formField }}">{{ item.formContent }}:</label>
+                <textarea class="contact-form-input contact-form-input--message" required="" name="item.formField" id="item.formField" placeholder="Write message..."></textarea>
+            {% else %}
+                <label class="contact-form-label" for="{{ item.formField }}">{{ item.formContent }}:</label>
+                <input class="contact-form-input" type="{{ item.inputType }}" id="{{ item.formField }}" name="{{ item.formField }}" required></input>
+            {% endif %}
+        {% endfor %}
+        <button class="contact-form-bt-submit" type="submit">Send Message</button>
+    </form>
+</div>

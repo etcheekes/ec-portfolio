@@ -1,0 +1,27 @@
+[
+    {
+       "formContent": "Name",
+       "formField": "name",
+       "inputType": "text"
+    },
+    {
+        "formContent": "Email",
+        "formField": "email",
+        "inputType": "text"
+    },
+    {
+        "formContent": "Phone",
+        "formField": "phone",
+        "inputType": "text"
+    },
+    {
+        "formContent": "How did you find us?",
+        "formField": "how-find-us",
+        "inputType": "text" 
+    },
+    {
+        "formContent": "Message",
+        "formField": "message",
+        "inputType": "textarea" 
+    }
+]
