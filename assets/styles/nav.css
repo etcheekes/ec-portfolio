@@ -1,0 +1,75 @@
+.header {
+    background-color: var(--primaryColor); /* nav bar color */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* nav items */
+
+.nav-container {
+    grid-column: 2 / -2; /* margin for nav bar */
+}
+
+.nav-elements {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0; /* remove default padding for ul */
+}
+
+.nav-link {
+    color: var(--textColorLight);
+}
+
+@media screen and (max-width: 900px) {
+    .nav__links {
+        display: none; /* hide nav bar links */
+    }
+}
+
+/* hamburger button */
+
+.icon-bar {
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    background-color: var(--accent);
+    transition: transform 0.4s ease;
+}
+
+/* when the button has the active class */
+
+/* hide middle icon-bar */
+.nav-modal-dropdown-toggle.active .icon-bar:nth-child(2) {
+opacity: 0;
+}
+
+/* rotate and position the other icon-bars to form an x*/
+.nav-modal-dropdown-toggle.active .icon-bar:first-child {
+transform: translate(0, 6px) rotate(-45deg);
+}
+
+.nav-modal-dropdown-toggle.active .icon-bar:last-child {
+transform: translate(0, -6px) rotate(45deg);
+}
+
+/* dropdown window */
+
+.nav-modal-dropdown {
+    grid-column: span 12;
+    display: none; /* hidden by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* maintain modal window background as one moves screen */
+    background-color: var(--primaryColor);
+    list-style-type: none;
+}
+
+/* hide toggle button */
+@media screen and (min-width: 901px) {
+    .nav-modal-dropdown-toggle {
+        display: none;
+    }
+}

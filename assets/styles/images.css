@@ -1,0 +1,34 @@
+/* responsive aspect ratio */
+.aspect-ratio-container {
+    grid-column: span 12;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* This value is for an aspect ratio of 16:9. Adjust as needed. */
+    overflow: hidden;
+}
+
+.aspect-ratio-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* text infront of image */
+.text__in-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 
+
+.text__in-image {
+    position: absolute;
+    z-index: 2;
+}

@@ -1,0 +1,7 @@
+[
+    ["Home", "/"],
+    ["About", "/pages/about/"],
+    ["Services", "/pages/services/"],
+    ["News", "/pages/blog/"],
+    ["Contact", "/pages/contact/"]
+]

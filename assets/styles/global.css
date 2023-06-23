@@ -1,0 +1,106 @@
+/* theme */
+:root {
+    /* Color scheme */
+    --primaryColor: #1d2d3e;
+    --primaryColorLight: #173b7f;
+    --secondaryColor: #feca5d;
+    --accent: #583d27;
+    --highlightColor: #eff4f6;
+  
+    /* Neutral colors */
+    --textColorDark: #585666;
+    --textColorLight: #f5f6f9;
+    --headerTextColor: #f5f5f5;
+    --backgroundColor: #ffffff;
+    --footerColor: #0f2752;
+}
+
+.body {
+    background-color: var(--backgroundColor);
+}
+  
+
+/* typography */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+body {
+    /* base font size and line height */
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* Set different font sizes for headings */
+    font-size: 2rem;
+    color: var(--primaryColor);
+  }
+  
+h2 {
+    font-size: 1.75rem;
+  }
+  
+h3 {
+    font-size: 1.5rem;
+  }
+  
+h4 {
+    font-size: 1.25rem;
+  }
+  
+h5 {
+    font-size: 1rem;
+  }
+  
+h6 {
+    font-size: 0.875rem;
+  }
+
+a {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondaryColor);
+}
+
+button {
+    color: var(--primaryColor);
+}
+
+button:hover {
+    background-color: var(--secondaryColor);
+}
+
+/* layout 12-grid system */
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.header,
+.main,
+.footer {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.main {
+    gap: 1rem;
+}
+
+/* logo */
+
+.logo {
+    color: var(--textColorLight);
+}
