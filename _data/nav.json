@@ -2,6 +2,6 @@
     ["Home", "/"],
     ["About", "/pages/about/"],
     ["Services", "/pages/services/"],
-    ["News", "/pages/blog/"],
+    ["Blog", "/pages/blog/"],
     ["Contact", "/pages/contact/"]
 ]
