@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 750px) {
     .contact-container {
-        grid-column: 2 / 7;
+        grid-column: 2 / 8;
     }
     .main {
         gap: 4rem;

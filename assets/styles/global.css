@@ -95,6 +95,10 @@ button:hover {
     grid-template-columns: repeat(12, 1fr);
 }
 
+.header {
+    margin-bottom: 2rem;
+}
+
 .main {
     gap: 1rem;
 }
@@ -103,6 +107,7 @@ button:hover {
     color: var(--textColorLight);
     background-color: var(--footerColor);
     margin-top: auto;
+    margin-top: 5rem;
 }
 
 /* logo */
