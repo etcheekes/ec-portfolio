@@ -83,20 +83,26 @@ button:hover {
 /* layout 12-grid system */
 
 .body {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .header,
 .main,
 .footer {
-    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
 .main {
     gap: 1rem;
+}
+
+.footer {
+    color: var(--textColorLight);
+    background-color: var(--footerColor);
+    margin-top: auto;
 }
 
 /* logo */
