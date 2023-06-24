@@ -1,11 +1,3 @@
-.footer {
-    grid-column: span 12;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    color: var(--textColorLight);
-    background-color: var(--footerColor);
-}
-
 .footer-nav {
     grid-column: span 12;
     height: 200px;
