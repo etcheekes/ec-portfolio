@@ -5,5 +5,13 @@ description: input description
 eleventyComputed:
   frontmatterTest: "{{ testData }}"
 ---
-
-<p>{{ frontmatterTest }}</p>
+    <div class="home-container">
+        <div class="home-introduction">
+            <h1>Hi, I'm Erik, a Web Developer</h1>
+            {% image "selfPicture.jpg", "Image of Erik", "erik-image", "lazy", "20vw"%}
+            <p>I turn your ideas into digital realities</p>
+            <p>Explore this website I made to learn more about me</p>
+            <button>Contact me</button>
+        </div>
+    </div>
+    <div class="home-section-divider"></div>
