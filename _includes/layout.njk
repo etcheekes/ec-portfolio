@@ -31,5 +31,10 @@
         <!-- Footer content: copyright, links, etc. -->
             {% include "footer.njk" %}
         </footer>
+        {% if page.url == "/" %}
+            <script>
+                revealProjectText('#liftIt-select-options', '#liftIt-technical-experience', '#liftIt-inner-workings');
+            </script>
+        {% endif %}
 	</body>
 </html>
