@@ -4,27 +4,31 @@
         "image": "liftIt.jpg",
         "imageAlt": "Image of Lift-It app project." ,
         "url": "https://lift-it.up.railway.app/home/",
-        "templateContent": "partials/liftIt.njk"
+        "templateContent": "partials/liftIt.njk",
+        "gitRepo": "https://github.com/etcheekes/Liftit_Django"
     },
     {
         "header": "Landing Page",
         "image": "placeholder.jpg",
         "imageAlt": "Image of landing page website.",
         "url": "https://landing-page-example-ec.netlify.app/",
-        "templateContent": "partials/landPage.njk"
+        "templateContent": "partials/landPage.njk",
+        "gitRepo": "https://github.com/etcheekes/templates/tree/main/landingPageOne"
     },
     {
         "header": "Multi-Page",
         "image": "placeholder.jpg",
         "imageAlt": "Image of multi-page website.",
         "url": "https://solicitor-example-site.netlify.app/",
-        "templateContent": "partials/multiPage.njk"
+        "templateContent": "partials/multiPage.njk",
+        "gitRepo": "https://github.com/etcheekes/templates/tree/main/lawyerTemplateEleventy"
     },
     {
         "header": "Frontend Clone of Google Search",
         "image": "placeholder.jpg",
         "imageAlt": "Image of my clone of google's frontend.",
         "url": "https://ec-frontend-clone-of-search-engine.netlify.app/",
-        "templateContent": "partials/searchEngineFrontendClone.njk"
+        "templateContent": "partials/searchEngineFrontendClone.njk",
+        "gitRepo": "https://github.com/etcheekes/clonedFrontendSites/tree/main/searchEngineHomepage"
     }
 ]
