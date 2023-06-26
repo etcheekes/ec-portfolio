@@ -5,5 +5,26 @@
         "imageAlt": "Image of Lift-It app project." ,
         "url": "https://lift-it.up.railway.app/home/",
         "templateContent": "partials/liftIt.njk"
+    },
+    {
+        "header": "Landing Page",
+        "image": "placeholder.jpg",
+        "imageAlt": "Image of landing page website.",
+        "url": "https://landing-page-example-ec.netlify.app/",
+        "templateContent": "partials/landPage.njk"
+    },
+    {
+        "header": "Multi-Page",
+        "image": "placeholder.jpg",
+        "imageAlt": "Image of multi-page website.",
+        "url": "https://solicitor-example-site.netlify.app/",
+        "templateContent": "partials/multiPage.njk"
+    },
+    {
+        "header": "Frontend Clone of Google Search",
+        "image": "placeholder.jpg",
+        "imageAlt": "Image of my clone of google's frontend.",
+        "url": "https://ec-frontend-clone-of-search-engine.netlify.app/",
+        "templateContent": "partials/searchEngineFrontendClone.njk"
     }
 ]
