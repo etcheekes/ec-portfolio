@@ -2,7 +2,7 @@
     <div class="index-project">
         <h2>{{ project.header }}</h2>
         <p>Try {{ project.header }} <a href="{{ project.url }}">here</a></p>
-        {% image "liftIt.jpg", "Image of Lift-It app project", "project-image", "lazy", "20vw"%}
+        {% image project.image, project.imageAlt, "project-image", "lazy", "20vw"%}
         {% include project.templateContent %}
     </div>
 {% endfor %}

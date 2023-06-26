@@ -1,7 +1,8 @@
 [
     {
         "header": "Lift-It",
-        "image": "/images/liftIt.jpg",
+        "image": "liftIt.jpg",
+        "imageAlt": "Image of Lift-It app project." ,
         "url": "https://lift-it.up.railway.app/home/",
         "templateContent": "partials/liftIt.njk"
     }
