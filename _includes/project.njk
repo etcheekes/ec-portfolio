@@ -1,9 +1,14 @@
 {% for project in projects %}
+    <!-- projects  -->
     <div class="home-section-divider"></div>
     <div class="index-project">
-        <h2>{{ project.header }}</h2>
-        <p>Try {{ project.header }} <a href="{{ project.url }}">here</a></p>
-        {% image project.image, project.imageAlt, "project-image", "lazy", "20vw"%}
-        {% include project.templateContent %}
+        <div class="index-project-left">
+            <h2>{{ project.header }}</h2>
+            {% image project.image, project.imageAlt, "project-image", "lazy", "20vw"%}
+        </div>
+        <div class="index-project-right">
+            <p>Try {{ project.header }} <a href="{{ project.url }}">here</a></p>
+            {% include project.templateContent %}
+        </div>
     </div>
 {% endfor %}

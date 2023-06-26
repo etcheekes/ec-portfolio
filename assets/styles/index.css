@@ -1,6 +1,6 @@
 
 .home-container {
-    grid-column: 2 / -2;
+    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
@@ -8,7 +8,7 @@
 /* introduction section */
 
 .home-introduction {
-    grid-column: 1 / -1;
+    grid-column: 2 / -2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,4 +18,21 @@
 .home-section-divider {
     grid-column: 1 / -1;
     border: dashed rgba(192, 96, 20, 0.3);
+}
+
+/* project sections */
+
+.index-project {
+    grid-column: 2 / -2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* responsiveness */
+
+@media screen and (min-width: 1200px) {
+    .index-project-left,
+    .index-project-right {
+        grid-column: span 6;
+    }
 }
