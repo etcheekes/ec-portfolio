@@ -1,0 +1,29 @@
+.about-container {
+    grid-column: 2 / -2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.erik-image-about {
+    grid-column: 1 / -1;
+    background-color: var(--backgroundColor);
+}
+
+.erik-image-about img {
+    position: sticky;
+    top: 100px;
+}
+
+.about-content {
+    grid-column: 1 / -1;
+}
+
+/* responsiveness */
+@media screen and (min-width: 1200px) {
+    .erik-image-about,
+    .about-content {
+        grid-column: span 6
+    }
+
+}
+
