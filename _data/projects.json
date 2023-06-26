@@ -1,0 +1,8 @@
+[
+    {
+        "header": "Lift-It",
+        "image": "/images/liftIt.jpg",
+        "url": "https://lift-it.up.railway.app/home/",
+        "templateContent": "partials/liftIt.njk"
+    }
+]
