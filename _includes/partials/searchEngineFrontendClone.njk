@@ -2,7 +2,7 @@
 <p>Following on from the full-stack web app, I decided to focus on the front-end which entailed focusing on HTML, CSS, and JavaScript. Thus, as a first front-end challenge, I attempted to recreate the front-end design of Google’s iconic search engine page.</p>
 <p>Key feature:</p>
 <ul> 
-    <li>A responsive and mobile friendly clone of Google’s search engine’s front-end design.</li>
+    <li>{{ projects[1].keyFeatures }}</li>
 </ul>
 
 <p>For the landing page's technical details and/or my professional growth from its development, click below.</p>
@@ -15,19 +15,18 @@
     <h3>Lessons learned</h3>
     <p>Cloning the frontend of google's search engine offered learning opportunities in:</p>
     <ul>
-        <li>General Frontend Experience: The use of HTML, CSS, and JavaScript to create a webpage.</li>
-        <li>Core CSS skills: I improved my core CSS skills by using only functionality in-built into CSS when styling and implementing the homepage’s responsive layout/design (with CSS grid and flexbox).</li>
-        <li>BEM naming methodology: This was the first project in which I followed a CSS naming methodology, specifically BEM (Block, Element, Modifier). Adhering to BEM instilled in me the importance and usefulness of using well-structured and meaningful names to organize my CSS code. A strict class naming convention made understanding, debugging, and altering my CSS code far more straightforward.</li>
-        <li>JavaScript: A single function to aid in creating modal windows.</li>
+        {% for experience in projects[1].technicalExperienceGained %}
+            <li> {{ experience }} </li>
+        {% endfor %}
     </ul>
 </div>
 <div id="searchEngine-inner-workings" style="display:none">
     <h3>Technologies used</h3>
     <ul>
-        <li>HTML</li>
-        <li>CSS for styling and layout.</li>
-        <li>JavaScript</li>
+        {% for technology in projects[1].technologiesUsed %}
+        <li> {{ technology }} </li>
+        {% endfor %}
     </ul>
-    <p>See the github repository <a href="{{ projects[3].gitRepo }}">here</a>.</p>
+    <p>See the github repository <a href="{{ projects[1].gitRepo }}">here</a>.</p>
 </div>
 

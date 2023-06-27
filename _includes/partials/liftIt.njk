@@ -3,11 +3,9 @@
 <p>Lift-It is a weightlifting-focused web application with a user-friendly interface that helps users create personalised workout routines.</p>
 <p>Key features include:</p>
 <ul>
-    <li>Browse 206 exercises by name, muscle, or equipment.</li>
-    <li>Add or remove exercises.</li>
-    <li>Select exercises from the app’s database to create personalised workout routines.</li>
-    <li>Modify a routine by adding/removing exercises or changing their repetition/weight number.</li>
-    <li>Account creation enables users to access their unique exercises and save routines for later use.</li>
+    {% for feature in projects[0].keyFeatures%}
+        <li> {{ feature }} </li>
+    {% endfor %}
 </ul>
 
 <p>For Lift-It’s technical details and/or my professional growth from its development, click below.</p>
@@ -20,19 +18,15 @@
     <h3>Lessons learned</h3>
     <p>Creating a full-stack app offered valuable learning opportunities in key growth areas, including:</p>
     <ul>
-        <li>An improved higher-level understanding of frontend, backend, and database roles and how they interact together in a web application.</li>
-        <li>Greater understanding of using static and dynamic elements for a web application.</li>
-        <li>Experience in developing web applications using HTML, CSS, JavaScript, Python, Flask, Django, SQL, and database management (SQLite and PostgreSQL).</li>
-        <li>Experience deploying a web application using a PaaS (platform as a service).</li>
-        <li>Experience in designing a responsive user interface.</li>
-        <li>Experience implementing user management, including user authentication, sessions, and cookies.</li>
-        <li>Experience in version control using Git and GitHub.</li>
+        {% for experience in projects[0].technicalExperienceGained %}
+            <li> {{ experience }} </li>
+        {% endfor %}
     </ul>
 </div>
 <div id="liftIt-inner-workings" style="display:none">
     <h3>Technologies used</h3>
-    <p>Frontend: HTML5 and CSS (vanilla and Bootstrap framework) created the basic structure of the web application. JavaScript and its Fetch API implemented dynamic elements.</p>
-    <p>Backend: I used the Flask and Django web application frameworks in Lift-It's first and second iterations respectively. Both frameworks' templating engines rendered dynamic content using predefined HTML templates that relied on user input and data changes.</p>
-    <p>Database Management: I used SQLite initially, and later switched to PostgreSQL for Lift-It’s database management system. The process involved defining the schema and using SQL (for Flask) or Django's ORM (Object-Relational Mapping) for database queries.</p>
+    {% for technology in projects[0].technologiesUsed %}
+        <p> {{ technology }} </p>
+    {% endfor %}
     <p>See Lift-It's github repository <a href="{{ projects[0].gitRepo }}">here</a>.</p>
 </div>

@@ -2,9 +2,9 @@
 <p>Next I aimed to create a multi-page static website. To challenge myself and gain new skills I used a SSG (Static Site Generator). An SSG let me programmatically generate my webpages which improved my efficiency and productivity.</p>
 <p>Key features include:</p>
 <ul> 
-    <li>HTML, CSS, and JavaScript.</li>
-    <li>The Static Site Generator.<a href="https://www.11ty.dev/" target="_blank">Eleventy</a></li>
-    <li>Nunjucks as the templating language.</li>
+    {% for feature in projects[3].keyFeatures %}
+        <li> {{ feature }}</li>
+    {% endfor %}
 </ul>
 
 <p>For the landing page's technical details and/or my professional growth from its development, click below.</p>
@@ -17,18 +17,17 @@
     <h3>Lessons learned</h3>
     <p>Creating a multi page website with a static site generator offered learning opportunities in:</p>
     <ul>
-        <li>Templating: Using Nunjucks, I gained experience in programmatically generating reusable and modular HTML templates.</li>
-        <li>Data management: I gained experience in storing data within JSON files inside arrays and objects. These data files served as a central repository of information that was to populate my website pages and HTML templates with key data.</li>
-        <li>Fundamental Programming concepts: Eleventy and Nunjucks enabled me to apply fundamental programming concepts (like variables, loops, and conditional statements) during the process accessing stored data and feeding it into my website.</li>
-        <li>CSS file management: With a multi-page website I shifted my approach to organizing CSS. I kept CSS rules that were specific to a page or HTML template contained within their own respective CSS files. This organized structure aided CSS debugging and helped maintain the modularity of my HTML templates.</li>
+        {% for experience in projects[3].technicalExperienceGained %}
+            <li> {{ experience }}</li>
+        {% endfor %}
     </ul>
 </div>
 <div id="multiPage-inner-workings" style="display:none">
     <h3>Technologies used</h3>
     <ul> 
-        <li>HTML, CSS, and JavaScript.</li>
-        <li>The Static Site Generator.<a href="https://www.11ty.dev/" target="_blank">Eleventy</a></li>
-        <li>Nunjucks as the templating language.</li>
+        {% for technology in projects[3].technologiesUsed %}
+            <li> {{ technology | safe }} </li>
+        {% endfor %}
     </ul>
-    <p>See the Multi page's github repository <a href="{{ projects[2].gitRepos }}">here</a>.</p>
+    <p>See the Multi page's github repository <a href="{{ projects[3].gitRepos }}">here</a>.</p>
 </div>

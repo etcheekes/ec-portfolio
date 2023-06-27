@@ -2,8 +2,9 @@
 Next, I set my eyes on creating functional static websites, the first being a landing page
 <p>Key features include:</p>
 <ul> 
-    <li>A single-page website with a portfolio, experience, about, and contact information sections and a nav bar.</li>
-    <li>The webpage is responsive and mobile friendly.</li>
+    {% for feature in projects[2].keyFeatures %}
+        <li> {{ feature }}</li>
+    {% endfor %}
 </ul>
 
 <p>For the landing page's technical details and/or my professional growth from its development, click below.</p>
@@ -16,18 +17,17 @@ Next, I set my eyes on creating functional static websites, the first being a la
     <h3>Lessons learned</h3>
     <p>Creating a simple landing page offered learning opportunities in:</p>
     <ul>
-        <li>General Frontend Experience: General experience with using HTML, CSS, and JavaScript to create a functional single-page website.</li>
-        <li>Core CSS Skills: I further improved my core CSS skills by using only functionality in-built into CSS when styling and implementing responsive layouts/designs (with CSS grid and flexbox).</li>
-        <li>CSS class-based naming: Influenced by my experience using BEM (Block, Element, Modifier) for my search engine clone, I continued using its naming convention (though not adhering to it as strictly). Thus, this class-based naming approach has become a solid foundation in my CSS development process.</li>
-        <li>JavaScript: A single function to implement smooth scrolling when clicking a nav bar link.</li>
+        {% for experience in projects[2].technicalExperienceGained %}
+            <li> {{ experience }}</li>
+        {% endfor %}
     </ul>
 </div>
 <div id="landPage-inner-workings" style="display:none">
     <h3>Technologies used:</h3>
     <ul>
-        <li>HTML.</li>
-        <li>CSS for styling and layout.</li>
-        <li>JavaScript.</li>
+        {% for technology in projects[2].technologiesUsed %}
+            <li> {{ technology }} </li>
+        {% endfor %}
     </ul>
-    <p>See the landing page's github repository <a href="{{ projects[1].gitRepo }}">here</a>.</p>
+    <p>See the landing page's github repository <a href="{{ projects[2].gitRepo }}">here</a>.</p>
 </div>

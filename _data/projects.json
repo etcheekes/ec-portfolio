@@ -5,7 +5,28 @@
         "imageAlt": "Image of Lift-It app project." ,
         "url": "https://lift-it.up.railway.app/home/",
         "templateContent": "partials/liftIt.njk",
-        "gitRepo": "https://github.com/etcheekes/Liftit_Django"
+        "gitRepo": "https://github.com/etcheekes/Liftit_Django",
+        "keyFeatures": [
+            "Browse 206 exercises by name, muscle, or equipment.",
+            "Add or remove exercises.",
+            "Select exercises from the app’s database to create personalised workout routines.",
+            "Modify a routine by adding/removing exercises or changing their repetition/weight number.",
+            "Account creation enables users to access their unique exercises and save routines for later use."
+        ],
+        "technicalExperienceGained": [
+            "An improved higher-level understanding of frontend, backend, and database roles and how they interact together in a web application.",
+            "Greater understanding of using static and dynamic elements for a web application.",
+            "Experience in developing web applications using HTML, CSS, JavaScript, Python, Flask, Django, SQL, and database management (SQLite and PostgreSQL).",
+            "Experience deploying a web application using a PaaS (platform as a service).",
+            "Experience in designing a responsive user interface.",
+            "Experience implementing user management, including user authentication, sessions, and cookies.",
+            "Experience in version control using Git and GitHub."
+        ],
+        "technologiesUsed": [
+            "Frontend: HTML5 and CSS (vanilla and Bootstrap framework) created the basic structure of the web application. JavaScript and its Fetch API implemented dynamic elements.",
+            "Backend: I used the Flask and Django web application frameworks in Lift-It's first and second iterations respectively. Both frameworks' templating engines rendered dynamic content using predefined HTML templates that relied on user input and data changes.",
+            "Database Management: I used SQLite initially, and later switched to PostgreSQL for Lift-It’s database management system. The process involved defining the schema and using SQL (for Flask) or Django's ORM (Object-Relational Mapping) for database queries."
+        ]
     },
     {
         "header": "Frontend Clone of Google Search",
@@ -13,7 +34,21 @@
         "imageAlt": "Image of my clone of google's frontend.",
         "url": "https://ec-frontend-clone-of-search-engine.netlify.app/",
         "templateContent": "partials/searchEngineFrontendClone.njk",
-        "gitRepo": "https://github.com/etcheekes/clonedFrontendSites/tree/main/searchEngineHomepage"
+        "gitRepo": "https://github.com/etcheekes/clonedFrontendSites/tree/main/searchEngineHomepage",
+        "keyFeatures": [
+            "A responsive and mobile friendly clone of Google’s search engine’s front-end design."
+        ],
+        "technicalExperienceGained": [
+            "General Frontend Experience: The use of HTML, CSS, and JavaScript to create a webpage.",
+            "Core CSS skills: I improved my core CSS skills by using only functionality in-built into CSS when styling and implementing the homepage’s responsive layout/design (with CSS grid and flexbox).",
+            "BEM naming methodology: This was the first project in which I followed a CSS naming methodology, specifically BEM (Block, Element, Modifier). Adhering to BEM instilled in me the importance and usefulness of using well-structured and meaningful names to organize my CSS code. A strict class naming convention made understanding, debugging, and altering my CSS code far more straightforward.",
+            "JavaScript: A single function to aid in creating modal windows."
+        ],
+        "technologiesUsed": [
+            "HTML",
+            "CSS for styling and layout.",
+            "JavaScript"
+        ]
     },
     {
         "header": "Landing Page",
@@ -21,7 +56,22 @@
         "imageAlt": "Image of landing page website.",
         "url": "https://landing-page-example-ec.netlify.app/",
         "templateContent": "partials/landPage.njk",
-        "gitRepo": "https://github.com/etcheekes/templates/tree/main/landingPageOne"
+        "gitRepo": "https://github.com/etcheekes/templates/tree/main/landingPageOne",
+        "keyFeatures": [
+            "A single-page website with a portfolio, experience, about, and contact information sections and a nav bar.",
+            "The webpage is responsive and mobile friendly."
+        ],
+        "technicalExperienceGained": [
+            "General Frontend Experience: General experience with using HTML, CSS, and JavaScript to create a functional single-page website.",
+            "Core CSS Skills: I further improved my core CSS skills by using only functionality in-built into CSS when styling and implementing responsive layouts/designs (with CSS grid and flexbox).",
+            "CSS class-based naming: Influenced by my experience using BEM (Block, Element, Modifier) for my search engine clone, I continued using its naming convention (though not adhering to it as strictly). Thus, this class-based naming approach has become a solid foundation in my CSS development process.",
+            "JavaScript: A single function to implement smooth scrolling when clicking a nav bar link."
+        ],
+        "technologiesUsed": [
+            "HTML.",
+            "CSS for styling and layout.",
+            "JavaScript."
+        ]
     },
     {
         "header": "Multi-Page",
@@ -29,6 +79,21 @@
         "imageAlt": "Image of multi-page website.",
         "url": "https://solicitor-example-site.netlify.app/",
         "templateContent": "partials/multiPage.njk",
-        "gitRepo": "https://github.com/etcheekes/templates/tree/main/lawyerTemplateEleventy"
+        "gitRepo": "https://github.com/etcheekes/templates/tree/main/lawyerTemplateEleventy",
+        "keyFeatures": [
+            "A Home, About, Services, News, and Contact pages alongside a nav and footer. News and Services have their own respective subpages.",
+            "The entire website is responsive and mobile friendly."
+        ],
+        "technicalExperienceGained": [
+            "Templating: Using Nunjucks, I gained experience in programmatically generating reusable and modular HTML templates.",
+            "Data management: I gained experience in storing data within JSON files inside arrays and objects. These data files served as a central repository of information that was to populate my website pages and HTML templates with key data.",
+            "Fundamental Programming concepts: Eleventy and Nunjucks enabled me to apply fundamental programming concepts (like variables, loops, and conditional statements) during the process accessing stored data and feeding it into my website.",
+            "CSS file management: With a multi-page website I shifted my approach to organizing CSS. I kept CSS rules that were specific to a page or HTML template contained within their own respective CSS files. This organized structure aided CSS debugging and helped maintain the modularity of my HTML templates."
+        ],
+        "technologiesUsed": [
+            "HTML, CSS, and JavaScript.",
+            "The Static Site Generator <a href=\"https://www.11ty.dev/\" target=\"_blank\">Eleventy</a>.",
+            "<a href=\"https://mozilla.github.io/nunjucks/\" target=\"_blank\">Nunjucks</a> as the templating language."
+        ]
     }
 ]
