@@ -8,6 +8,14 @@
         "gitRepo": "https://github.com/etcheekes/Liftit_Django"
     },
     {
+        "header": "Frontend Clone of Google Search",
+        "image": "placeholder.jpg",
+        "imageAlt": "Image of my clone of google's frontend.",
+        "url": "https://ec-frontend-clone-of-search-engine.netlify.app/",
+        "templateContent": "partials/searchEngineFrontendClone.njk",
+        "gitRepo": "https://github.com/etcheekes/clonedFrontendSites/tree/main/searchEngineHomepage"
+    },
+    {
         "header": "Landing Page",
         "image": "placeholder.jpg",
         "imageAlt": "Image of landing page website.",
@@ -22,13 +30,5 @@
         "url": "https://solicitor-example-site.netlify.app/",
         "templateContent": "partials/multiPage.njk",
         "gitRepo": "https://github.com/etcheekes/templates/tree/main/lawyerTemplateEleventy"
-    },
-    {
-        "header": "Frontend Clone of Google Search",
-        "image": "placeholder.jpg",
-        "imageAlt": "Image of my clone of google's frontend.",
-        "url": "https://ec-frontend-clone-of-search-engine.netlify.app/",
-        "templateContent": "partials/searchEngineFrontendClone.njk",
-        "gitRepo": "https://github.com/etcheekes/clonedFrontendSites/tree/main/searchEngineHomepage"
     }
 ]
