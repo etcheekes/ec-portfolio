@@ -7,17 +7,7 @@
     {
         "formContent": "Email",
         "formField": "email",
-        "inputType": "text"
-    },
-    {
-        "formContent": "Phone",
-        "formField": "phone",
-        "inputType": "text"
-    },
-    {
-        "formContent": "How did you find us?",
-        "formField": "how-find-us",
-        "inputType": "text" 
+        "inputType": "email"
     },
     {
         "formContent": "Message",
