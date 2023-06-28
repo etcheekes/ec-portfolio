@@ -1,11 +1,4 @@
 {
     "name": "Firm Name",
-    "phone": "xxxx xxx xxx",
-    "email": "dev.erik.c@gmail.com",
-    "address": {
-        "lineOne": "Address Line 1",
-        "lineTwo": "Address Line 2",
-        "lineThree": "Address Line 3",
-        "lineFour": "Address Line 4"
-    }
+    "email": "dev.erik.c@gmail.com"
 }
