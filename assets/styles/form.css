@@ -1,7 +1,7 @@
 .contact-container {
     grid-column: 2 / 12;
-    max-width: 50rem;
-    margin: auto;
+	display: flex;
+	justify-content: center;
 }
 
 .contact-form-title {
@@ -12,6 +12,7 @@
 .contact-form {
     display: flex;
     flex-direction: column;
+    width: 40rem;
 }
 
 .contact-form-label {
@@ -44,13 +45,3 @@
     color: var(--primary);
     background-color: var(--secondary);
 }
-
-@media screen and (min-width: 750px) {
-    .contact-container {
-        grid-column: 2 / 8;
-    }
-    .main {
-        gap: 4rem;
-    }
-}
-
