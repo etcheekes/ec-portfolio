@@ -17,7 +17,7 @@
 
 .home-section-divider {
     grid-column: 1 / -1;
-    border: dashed rgba(192, 96, 20, 0.3);
+    border-bottom: dashed var(--primaryColorLight);
 }
 
 /* project sections */

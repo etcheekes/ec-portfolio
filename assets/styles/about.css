@@ -6,7 +6,6 @@
 
 .erik-image-about {
     grid-column: 1 / -1;
-    background-color: var(--backgroundColor);
 }
 
 .erik-image-about img {

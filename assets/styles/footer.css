@@ -7,7 +7,7 @@
 .footer-divider {
     margin-top: 5rem;
     grid-column: 4 / -4;
-    border: dashed rgba(192, 96, 20, 0.3);
+    border-bottom: dashed var(--primaryColorLight);
 }
 
 .footer-text {

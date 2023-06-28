@@ -1,5 +1,4 @@
 .header {
-    background-color: var(--primaryColor); /* nav bar color */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -18,9 +17,6 @@
     padding: 0; /* remove default padding for ul */
 }
 
-.nav-link {
-    color: var(--textColorLight);
-}
 
 @media screen and (max-width: 900px) {
     .nav__links {

@@ -6,7 +6,7 @@
 
 .contact-form-title {
     color: var(--primary);
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primaryColorLight);
 }
 
 .contact-form {
@@ -36,12 +36,11 @@
     height: 3.5rem;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    color: var(--bodyTextColourWhite);
-    background-color: var(--accent);
+    color: var(--textColorLight);
+    background-color: var(--primaryColor);
     margin-top: 1rem;
 }
 
 .contact-form-bt-submit:hover {
-    color: var(--primary);
-    background-color: var(--secondary);
+    background-color: var(--primaryColorLight);
 }
