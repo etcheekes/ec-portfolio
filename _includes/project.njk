@@ -1,7 +1,6 @@
 <div class="home-section-divider"></div>
-<h1 class="index-portfolio-header">Portfolio</h1>
+<h1 class="index-portfolio-header" id="portfolio-header">Portfolio</h1>
 <div class="index-portfolio-header-underline"></div>
-
 {% for project in projects %}
     <!-- nunjucks: don't generate divider for first project -->
     {% if loop.index > 1 %}

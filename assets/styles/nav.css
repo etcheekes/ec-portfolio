@@ -12,25 +12,40 @@
 
 .nav-elements {
     display: flex;
-    justify-content: space-between;
     list-style-type: none;
     padding: 0; /* remove default padding for ul */
+    font-size: 1.2rem;
 }
 
+.nav-elements li:nth-child(2) {
+    margin-left: auto;
+}
+
+.nav-link {
+    margin-left: 2rem;
+}
+
+#portfolio-header {
+    scroll-margin-top: 80px; /* ensure scroll stops early enough so sticky header does not block portfolio header */
+}
 
 @media screen and (max-width: 900px) {
-    .nav__links {
+    .nav-link {
         display: none; /* hide nav bar links */
     }
 }
 
 /* hamburger button */
 
+.nav-modal-dropdown-toggle {
+    background-color: var(--navColor);
+}
+
 .icon-bar {
     width: 25px;
     height: 4px;
     margin: 2px;
-    background-color: var(--accent);
+    background-color: var(--primaryColor);
     transition: transform 0.4s ease;
 }
 
@@ -59,7 +74,7 @@ transform: translate(0, -6px) rotate(45deg);
     justify-content: center;
     align-items: center;
     /* maintain modal window background as one moves screen */
-    background-color: var(--primaryColor);
+    background-color: var(--headerColor);
     list-style-type: none;
 }
 

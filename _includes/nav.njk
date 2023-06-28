@@ -2,7 +2,7 @@
         <nav class="nav-container">
             <ul class="nav-elements">
                 <!-- logo/comp name -->
-                <li><a href="/" class="logo-link"><div class="logo">Logo Here</div></a></li>
+                <li><a href="/#portfolio-header" class="portfolio-link"><div class="logo">Portfolio</div></a></li>
                 <!-- nav links -->
                 {% for item in nav %}
                 <li><a href="{{ item[1] }}" class="nav-link">{{ item[0] }}</a></li>
@@ -18,6 +18,6 @@
         <!-- modal window for nav links on smaller screen -->
         <nav class="nav-modal-dropdown">
             {% for item in nav %}
-            <li><a href="{{ item[1] }}" class="nav-link">{{ item[0] }}</a></li>
+            <li><a href="{{ item[1] }}" class="nav-link-dropdown">{{ item[0] }}</a></li>
             {% endfor %}
         </nav>
