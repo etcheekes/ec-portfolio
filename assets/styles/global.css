@@ -104,10 +104,8 @@ button:hover {
 }
 
 .footer {
-    color: var(--textColorLight);
-    background-color: var(--footerColor);
+    background-color: var(--backgroundColor);
     margin-top: auto;
-    margin-top: 5rem;
 }
 
 /* logo */

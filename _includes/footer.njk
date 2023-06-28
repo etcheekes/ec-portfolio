@@ -1,41 +1,4 @@
-{# obtain contact page url #}
-{% set contactHref= "" %}
-{% for item in nav %}
-    {% if item.name == "Contact" %}
-        {% set contactHref = item.href %}
-    {% endif %}
-{% endfor %}
 <div class="footer-content">
-    <div class="footer-logo">
-        <a>
-            <p class="logo">Logo Here<p> 
-        </a>
-    </div>
-    <ul class="sitemap footer-nav">
-        <li class="footer-nav-header">Sitemap</li>
-        {% for item in nav %}
-        <li class="footer-link">
-            <a class="footer-link-a" href="{{ item[1] }}">
-                {{ item[0] }}
-            </a>
-        </li class="footer-link">
-        {% endfor %}
-    </ul>
-    <ul class="footer-contact footer-nav">
-        <li class="footer-nav-header">Contact</li>
-        <li class="footer-link">
-            <p class="inline"><i class="fas fa-phone"></i> xxx-xxxx</p>
-        </li>
-        <li class="footer-link">
-            <p class="inline"><i class="fas fa-envelope"></i> example@smail.com</p>
-        </li>
-        <li class="footer-link">
-            <a class="footer-link-map" href="https://www.google.com/maps/search/?api=1&query=Burnham-on-Sea,+England" target="_blank">
-                <p class="inline location-text"><i class="fas fa-map-marker-alt"></i> &nbsp;location</p>
-            </a>
-        </li>
-    </ul>
-    <div class="copyright">
-        <p>&copy; Copyright 2023 to present - Erik Cheekes</p>
-    </div>
-</div>
+    <div class="footer-divider"></div>
+    <p class="footer-text">Lets talk, contact me at dev.erik.c@gmail.com or leave a message <a href="/contact.html">here</a>.</p>
+</div
