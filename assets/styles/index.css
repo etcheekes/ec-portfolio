@@ -59,6 +59,12 @@
     width: 100%;
 }
 
+.home-my-website-code {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 5rem;
+}
+
 /* responsiveness */
 
 @media screen and (min-width: 1200px) {
