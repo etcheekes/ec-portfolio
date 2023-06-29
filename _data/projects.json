@@ -36,7 +36,7 @@
         "templateContent": "partials/searchEngineFrontendClone.njk",
         "gitRepo": "https://github.com/etcheekes/clonedFrontendSites/tree/main/searchEngineHomepage",
         "keyFeatures": [
-            "A responsive and mobile friendly search engine clone based on Google’s iconic design."
+            "A responsive and mobile friendly search engine frontend clone based on Google’s iconic design."
         ],
         "technicalExperienceGained": [
             "General Frontend Experience: The use of HTML, CSS, and JavaScript to create a webpage.",
@@ -58,14 +58,14 @@
         "templateContent": "partials/landPage.njk",
         "gitRepo": "https://github.com/etcheekes/templates/tree/main/landingPageOne",
         "keyFeatures": [
-            "A single-page website with a portfolio, experience, about, and contact information sections and a nav bar.",
-            "The webpage is responsive and mobile friendly."
+            "A single-page website with a Portfolio, Experience, About, and Contact information sections.",
+            "The website is responsive and mobile friendly."
         ],
         "technicalExperienceGained": [
             "General Frontend Experience: General experience with using HTML, CSS, and JavaScript to create a functional single-page website.",
             "Core CSS Skills: I further improved my core CSS skills by using only functionality in-built into CSS when styling and implementing responsive layouts/designs (with CSS grid and flexbox).",
             "CSS class-based naming: Influenced by my experience using BEM (Block, Element, Modifier) for my search engine clone, I continued using its naming convention (though not adhering to it as strictly). Thus, this class-based naming approach has become a solid foundation in my CSS development process.",
-            "JavaScript: A single function to implement smooth scrolling when clicking a nav bar link."
+            "JavaScript: A single function to implement smooth scrolling when clicking a navigation bar link."
         ],
         "technologiesUsed": [
             "HTML.",
@@ -74,23 +74,23 @@
         ]
     },
     {
-        "header": "Multi-Page",
+        "header": "Multi-Page Website",
         "image": "multiPage.jpg",
         "imageAlt": "Image of multi-page website.",
         "url": "https://solicitor-example-site.netlify.app/",
         "templateContent": "partials/multiPage.njk",
         "gitRepo": "https://github.com/etcheekes/templates/tree/main/lawyerTemplateEleventy",
         "keyFeatures": [
-            "A Home, About, Services, News, and Contact pages alongside a nav and footer. News and Services have their own respective subpages.",
+            "A Home, About, Services, News, and Contact pages alongside a navigation bar and footer. News and Services have their own respective subpages.",
             "The entire website is responsive and mobile friendly."
         ],
         "technicalExperienceGained": [
             "Templating: Using Nunjucks, I gained experience in programmatically generating reusable and modular HTML templates.",
-            "Data management: I gained experience in storing data within JSON files inside arrays and objects. These data files served as a central repository of information that was to populate my website pages and HTML templates with key data.",
-            "Fundamental Programming concepts: Eleventy and Nunjucks enabled me to apply fundamental programming concepts (like variables, loops, and conditional statements) during the process accessing stored data and feeding it into my website.",
-            "CSS file management: With a multi-page website I organized CSS differently. I kept CSS rules that were specific to a page or HTML template contained within their own respective CSS files. This organized structure aided CSS debugging and helped maintain the modularity of my HTML templates. I kept CSS rules that applied universally, such as font-size, in a global file.",
-            "CSS variables: I started incorporating CSS variables for the colour themes.",
-            "JavaScript: I implemented two functions. The first function helped implement the collapsible navigation bar. The second function focused on highlighting the currently selected page link in the services’ page menu to provide visual feedback to the user." 
+            "Data management: I gained experience in storing data within JSON files inside arrays and objects. These data files served as a central repository of information that I used to populate parts of my website and HTML.",
+            "Fundamental Programming Concepts: Gained experience in applying fundamental programming concepts as by using Eleventy and Nunjucks I could use variables, loops, conditional statements, and so on, to help create the website.",
+            "CSS file management: With a multi-page website I organized my CSS differently. I kept CSS rules that were specific to a page or HTML template contained within their own respective CSS files. This organized structure aided CSS debugging and helped maintain the modularity of my HTML templates. I kept CSS rules that applied universally in global files.",
+            "CSS variables: I started incorporating the use of CSS variables.",
+            "JavaScript: I implemented two functions. The first function helped implement the collapsible navigation bar. The second function focused on highlighting the currently selected page link in the service’s page menu to provide visual feedback to the user." 
         ],
         "technologiesUsed": [
             "HTML, CSS, and JavaScript.",
