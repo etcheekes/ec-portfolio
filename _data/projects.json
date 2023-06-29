@@ -29,14 +29,14 @@
         ]
     },
     {
-        "header": "Frontend Clone of Google Search",
+        "header": "Frontend Clone of Search Engine",
         "image": "placeholder.jpg",
-        "imageAlt": "Image of my clone of google's frontend.",
+        "imageAlt": "Image of my clone of a search engine frontend design.",
         "url": "https://ec-frontend-clone-of-search-engine.netlify.app/",
         "templateContent": "partials/searchEngineFrontendClone.njk",
         "gitRepo": "https://github.com/etcheekes/clonedFrontendSites/tree/main/searchEngineHomepage",
         "keyFeatures": [
-            "A responsive and mobile friendly clone of Google’s search engine’s front-end design."
+            "A responsive and mobile friendly search engine clone based on Google’s iconic design."
         ],
         "technicalExperienceGained": [
             "General Frontend Experience: The use of HTML, CSS, and JavaScript to create a webpage.",
