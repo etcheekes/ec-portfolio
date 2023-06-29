@@ -75,6 +75,7 @@ a:hover {
 
 button {
     color: var(--primaryColor);
+    cursor: pointer;
 }
 
 button:hover {
