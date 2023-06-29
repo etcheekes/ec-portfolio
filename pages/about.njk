@@ -5,15 +5,19 @@ description: input description
 aboutPage: true
 ---
 <div class="about-container">
-    {% image "selfPicture.jpg", "Image of Erik", "erik-image erik-image-about", "lazy", "20vw" %}
+    <div class="erik-image-about">
+        {% image "selfPictureRound.jpg", "Image of Erik", "erik-image", "lazy", "(max-width: 1200px) 30vw, 25vw" %}
+    </div>
     <div class="about-content">
-        <p>Click below to find out more about me.</p>
-        <select id="selectOptions" autocomplete="off">
-            <option value="instruct-visitor">What would you like to know?</option>
-            <option value="programming-journey">My programming journey</option>
-            <option value="decision-to-program">Decision to program</option>
-            <option value="education">Education</option>
-        </select>
+        <p class="about-content-signposting">Click below to find out more about me.</p>
+        <div class="about-content-selectOptions-div">
+            <select id="selectOptions" autocomplete="off">
+                <option value="instruct-visitor">What would you like to know?</option>
+                <option value="programming-journey">My programming journey</option>
+                <option value="decision-to-program">Decision to program</option>
+                <option value="education">Education</option>
+            </select>
+        </div>
         <div id="programming-journey" style="display:none">
             <h3>Programming education</h3>
             <p>I initially started programming using R during my PhD, and later became acquainted with SQL and databases through the <a href="https://gb.coursera.org/professional-certificates/google-data-analytics" target="_blank">Google Data Analytics Professional Certificate</a>. Following that, I successfully completed freeCodeCamp's <a href="https://www.freecodecamp.org/learn/scientific-computing-with-python/" target="_blank">Scientific Computing with Python</a> and <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x"  target="_blank">Harvard's CS50x course</a> 'Introduction to the intellectual enterprises of computer science and the art of programming'. Most recently, I completed freeCodeCamp's <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank"> Responsive Web Design </a> and <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank">JavaScript Algorithms and Data Structures</a> certifications.</p>
