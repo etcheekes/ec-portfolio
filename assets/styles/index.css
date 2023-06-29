@@ -19,6 +19,8 @@
 .home-section-divider {
     grid-column: 1 / -1;
     border-bottom: dashed var(--primaryColorLight);
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 /* project sections */
@@ -43,6 +45,10 @@
 .index-project-left,
 .index-project-right {
     grid-column: 1 / -1;
+}
+
+.index-project-title {
+    margin: 4px 0 0 0;
 }
 
 .project-image img {
