@@ -86,6 +86,7 @@ select {
     color: var(--textColorLight);
     padding: 5px;
     border-radius: 10px;
+    cursor: pointer;
 }
   
 /* layout 12-grid system */
