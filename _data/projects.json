@@ -30,7 +30,7 @@
     },
     {
         "header": "Frontend Clone of Search Engine",
-        "image": "placeholder.jpg",
+        "image": "searchEngine.jpg",
         "imageAlt": "Image of my clone of a search engine frontend design.",
         "url": "https://ec-frontend-clone-of-search-engine.netlify.app/",
         "templateContent": "partials/searchEngineFrontendClone.njk",
@@ -52,7 +52,7 @@
     },
     {
         "header": "Landing Page",
-        "image": "placeholder.jpg",
+        "image": "landingPage.jpg",
         "imageAlt": "Image of landing page website.",
         "url": "https://landing-page-example-ec.netlify.app/",
         "templateContent": "partials/landPage.njk",
@@ -75,7 +75,7 @@
     },
     {
         "header": "Multi-Page",
-        "image": "placeholder.jpg",
+        "image": "multiPage.jpg",
         "imageAlt": "Image of multi-page website.",
         "url": "https://solicitor-example-site.netlify.app/",
         "templateContent": "partials/multiPage.njk",
