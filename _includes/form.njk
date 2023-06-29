@@ -7,7 +7,7 @@
         {% for item in form %}
             {% if item.inputType == "textarea" %}
                 <label class="contact-form-label" for="{{ item.formField }}">{{ item.formContent }}:</label>
-                <textarea class="contact-form-input contact-form-input--message" required="" name="item.formField" id="item.formField" placeholder="Write message..."></textarea>
+                <textarea class="contact-form-input contact-form-input--message" required="" name="{{ item.formField }}" id="{{ item.formField }}" placeholder="Write message..."></textarea>
             {% else %}
                 <label class="contact-form-label" for="{{ item.formField }}">{{ item.formContent }}:</label>
                 <input class="contact-form-input" type="{{ item.inputType }}" id="{{ item.formField }}" name="{{ item.formField }}" required></input>
