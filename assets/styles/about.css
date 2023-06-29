@@ -2,19 +2,29 @@
     grid-column: 2 / -2;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    min-height: 600px;
 }
 
 .erik-image-about {
     grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
 }
 
 .erik-image-about img {
     position: sticky;
-    top: 100px;
+    top: 25vh;
 }
 
 .about-content {
     grid-column: 1 / -1;
+}
+
+.about-content-signposting,
+.about-content-selectOptions-div
+ {
+    text-align: center;
 }
 
 /* responsiveness */
@@ -23,6 +33,10 @@
     .about-content {
         grid-column: span 6
     }
-
+    .about-content-signposting,
+    .about-content-selectOptions-div
+    {
+        text-align: left;
+    }
 }
 
