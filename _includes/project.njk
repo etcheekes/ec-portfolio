@@ -9,11 +9,11 @@
     {% endif %}
     <div class="index-project">
         <div class="index-project-left">
-            <h2>{{ project.header }}</h2>
+            <h2 class="index-project-title">{{ project.header }}</h2>
             {% image project.image, project.imageAlt, "project-image", "lazy", "20vw"%}
         </div>
         <div class="index-project-right">
-            <p>Try it out <a href="{{ project.url }}">here</a></p>
+            <p>See it <a href="{{ project.url }}" target="_blank">here</a> or examine its code <a href="{{ project.gitRepo }}">here</a>.</p>
             {% include project.templateContent %}
         </div>
     </div>
