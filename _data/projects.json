@@ -77,7 +77,7 @@
         "header": "Multi-Page Website",
         "image": "multiPage.jpg",
         "imageAlt": "Image of multi-page website.",
-        "url": "https://solicitor-example-site.netlify.app/",
+        "url": "https://ec-multi-page-site.netlify.app/",
         "templateContent": "partials/multiPage.njk",
         "gitRepo": "https://github.com/etcheekes/templates/tree/main/lawyerTemplateEleventy",
         "keyFeatures": [
