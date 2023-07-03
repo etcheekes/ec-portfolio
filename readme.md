@@ -4,7 +4,7 @@ Contains the code used to build my portfolio website.
 
 ## Summary
 
-I created my portfolio site using the SSG (Static Site Generator) Eleventy. The website contains Home, About, and Contact pages. The website is responsive and mobile friendly. See it live [here](https://erik-c-portfolio.netlify.app/).
+I created my portfolio site using the SSG (Static Site Generator) Eleventy. The website contains Home, About, and Contact pages. The website is responsive and mobile friendly. See it live [here](https://erikcheekes.com/).
 
 ### Technologies used
 - Eleventy as the SSG.
