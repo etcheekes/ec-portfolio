@@ -1,23 +1,22 @@
-        <!-- nav bar -->
-        <nav class="nav-container">
-            <ul class="nav-elements">
-                <!-- logo/comp name -->
-                <li><a href="/#portfolio-header" class="portfolio-link"><div class="logo">Portfolio</div></a></li>
-                <!-- nav links -->
-                {% for item in nav %}
-                <li><a href="{{ item[1] }}" class="nav-link">{{ item[0] }}</a></li>
-                {% endfor %}
-                <!-- hamburger button -->
-                <button type="button" class="nav-modal-dropdown-toggle">
-                    {% for _ in range(3) %}
-                        <div class="icon-bar"></div>
-                    {% endfor %}
-                </button>
-            </ul>
-        </nav>
-        <!-- modal window for nav links on smaller screen -->
-        <nav class="nav-modal-dropdown">
-            {% for item in nav %}
-            <li><a href="{{ item[1] }}" class="nav-link-dropdown">{{ item[0] }}</a></li>
+{# nav bar #}
+<nav class="nav-container">
+    <ul class="nav-elements">
+        <li><a href="/#portfolio-header" class="portfolio-link"><div class="logo">Portfolio</div></a></li>
+        {# nav links #}
+        {% for item in nav %} {# loop through nav.json #}
+            <li><a href="{{ item[1] }}" class="nav-link">{{ item[0] }}</a></li>
+        {% endfor %}
+        {# hamburger button #}
+        <button type="button" class="nav-modal-dropdown-toggle">
+            {% for _ in range(3) %} {# generate three icon-bars #}
+                <div class="icon-bar"></div>
             {% endfor %}
-        </nav>
+        </button>
+    </ul>
+</nav>
+{# modal window for nav links on smaller screen #}
+<nav class="nav-modal-dropdown">
+    {% for item in nav %} {# loop through nav.json #}
+        <li><a href="{{ item[1] }}" class="nav-link-dropdown">{{ item[0] }}</a></li>
+    {% endfor %}
+</nav>

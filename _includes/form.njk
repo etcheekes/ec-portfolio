@@ -1,14 +1,15 @@
+{# form template #}
 <div class="contact-container">
     <form class="contact-form" method="POST" data-netlify="true">
         <div class="contact-form-intro">
             <h2 class="contact-form-title">Get in touch</h2>
             <p>Please fill in the form below, or email me directly at {{ contactDetails.email }} to get in contact with me.</p>
         </div>
-        {% for item in form %}
-            {% if item.inputType == "textarea" %}
+        {% for item in form %} {# loop through form.json #}
+            {% if item.inputType == "textarea" %} {# generate a <textarea> element #}
                 <label class="contact-form-label" for="{{ item.formField }}">{{ item.formContent }}:</label>
                 <textarea class="contact-form-input contact-form-input--message" required="" name="{{ item.formField }}" id="{{ item.formField }}" placeholder="Write message..."></textarea>
-            {% else %}
+            {% else %} {# generate a <input> element #}
                 <label class="contact-form-label" for="{{ item.formField }}">{{ item.formContent }}:</label>
                 <input class="contact-form-input" type="{{ item.inputType }}" id="{{ item.formField }}" name="{{ item.formField }}" required></input>
             {% endif %}

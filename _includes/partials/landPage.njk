@@ -1,12 +1,14 @@
+{# content description for single-page website #}
 <p>A simple single-page website.</p>
 <p>Key features include:</p>
-<ul> 
+<ul> {# generate list of key features of current project #}
     {% for feature in projects[2].keyFeatures %}
         <li> {{ feature }}</li>
     {% endfor %}
 </ul>
 
 <p>For the project's technical details and/or my developer growth from its development, click below.</p>
+{# dropdown menu, revealProjectText function from main.js displays correct content when clicked #}
 <select id="landPage-select-options" autcomplete="off">
     <option value="instruct-visitor">Learn more</option>
     <option value="inner-workings">What technologies did I use?</option>
@@ -15,7 +17,7 @@
 <div id="landPage-technical-experience" style="display:none">
     <h3>Lessons learned</h3>
     <p>Creating a simple landing page offered learning opportunities in:</p>
-    <ul>
+    <ul> {# generate list of key experinece gained from completing current project #}
         {% for experience in projects[2].technicalExperienceGained %}
             <li> {{ experience }}</li>
         {% endfor %}
@@ -23,7 +25,7 @@
 </div>
 <div id="landPage-inner-workings" style="display:none">
     <h3>Technologies used:</h3>
-    <ul>
+    <ul> {# generate list of technologies used during current project #}
         {% for technology in projects[2].technologiesUsed %}
             <li> {{ technology }} </li>
         {% endfor %}

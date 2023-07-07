@@ -10,48 +10,50 @@
         <link rel="stylesheet" href="/assets/styles/index.css">
         <link rel="stylesheet" href="/assets/styles/nav.css">
         <link rel="stylesheet" href="/assets/styles/footer.css">
-        <!-- conditionally render css pages -->
+        {# conditionally render css pages #}
         {% if aboutPage %}
-        <link rel="stylesheet" href="/assets/styles/about.css">
+            <link rel="stylesheet" href="/assets/styles/about.css">
         {% endif %}
         {% if formCSS %}
-        <link rel="stylesheet" href="/assets/styles/form.css">
-        <link rel="stylesheet" href="/assets/styles/contactDetails.css">
+            <link rel="stylesheet" href="/assets/styles/form.css">
+            <link rel="stylesheet" href="/assets/styles/contactDetails.css">
         {% endif %}
         {% if notFoundCSS %}
-        <link rel="stylesheet" href="/assets/styles/404.css">
+            <link rel="stylesheet" href="/assets/styles/404.css">
         {% endif %}
-        <!-- favicon  -->
+        {# favicon relevant files #}
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-        
+        {# js #}
         <script src="/assets/js/main.js"></script>
         <script src="/assets/js/nav.js"></script>
+        {# icons #}
         <script src="https://kit.fontawesome.com/b64e13a237.js" crossorigin="anonymous"></script>
+        {# title value supplied by frontmatter of page #}
         <title>{{ title }}</title>
 	</head>
 	<body class="body">
         <header class="header">
-            {% include "nav.njk" %}
+            {% include "nav.njk" %} {# navigation bar template #}
         </header>
         <main class="main">
+            {# content of webpage goes here. Safe filter stops nunjucks escaping HTML chars #}
             {{ content | safe }}
         </main>
         <footer class="footer">
-        <!-- Footer content: copyright, links, etc. -->
-            {% include "footer.njk" %}
+            {% include "footer.njk" %} {# footer template #}
         </footer>
-        {% if page.url == "/" %}
+        {% if page.url == "/" %} {# only call functions if on homepage #}
             <script>
-                // reveal text options for each function
+                // reveal text options for each function 
                 revealProjectText('#liftIt-select-options', '#liftIt-technical-experience', '#liftIt-inner-workings');
                 revealProjectText('#landPage-select-options', '#landPage-technical-experience', '#landPage-inner-workings');
                 revealProjectText('#multiPage-select-options', '#multiPage-technical-experience', '#multiPage-inner-workings');
                 revealProjectText('#searchEngine-select-options', '#searchEngine-technical-experience', '#searchEngine-inner-workings');
             </script>
         {% endif %}
-        {% if aboutPage %}
+        {% if aboutPage %} {# only call function if on about page #}
             <script>
                 // reveal text options
                 revealAboutText('#selectOptions', '#programming-journey', '#decision-to-program', '#education');

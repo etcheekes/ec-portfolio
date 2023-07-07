@@ -1,12 +1,14 @@
+{# content description for multi-page website project #}
 <p>Next I created a multi-page static website. To challenge myself and gain new skills I used a SSG (Static Site Generator). An SSG let me programmatically create parts of the website which improved my efficiency and productivity considerably.</p>
 <p>Key features include:</p>
-<ul> 
+<ul> {# generate list of key features of current project #}
     {% for feature in projects[3].keyFeatures %}
         <li> {{ feature }}</li>
     {% endfor %}
 </ul>
 
 <p>For the project's technical details and/or my developer growth from its development, click below.</p>
+{# dropdown menu, revealProjectText function from main.js displays correct content when clicked #}
 <select id="multiPage-select-options" autocomplete="off">
     <option value="instruct-visitor">Learn more</option>
     <option value="inner-workings">What technologies did I use?</option>
@@ -15,7 +17,7 @@
 <div id="multiPage-technical-experience" style="display:none">
     <h3>Lessons learned</h3>
     <p>Creating a multi page website with a static site generator offered learning opportunities in:</p>
-    <ul>
+    <ul> {# generate list of key experinece gained from completing current project #}
         {% for experience in projects[3].technicalExperienceGained %}
             <li> {{ experience }}</li>
         {% endfor %}
@@ -23,7 +25,7 @@
 </div>
 <div id="multiPage-inner-workings" style="display:none">
     <h3>Technologies used</h3>
-    <ul> 
+    <ul> {# generate list of technologies used during current project #}
         {% for technology in projects[3].technologiesUsed %}
             <li> {{ technology | safe }} </li>
         {% endfor %}

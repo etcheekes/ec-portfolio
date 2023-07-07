@@ -1,24 +1,23 @@
 <div class="home-section-divider"></div>
 <h1 class="index-portfolio-header" id="portfolio-header">Portfolio</h1>
 <div class="index-portfolio-header-underline"></div>
-{% for project in projects %}
-    <!-- nunjucks: don't generate divider for first project -->
-    {% if loop.index > 1 %}
-    <!-- projects  -->
-    <div class="home-section-divider"></div>
+{% for project in projects %} {# loop through each project in projects.json #}
+    {% if loop.index > 1 %} {# don't generate divider for first project #}
+        <div class="home-section-divider"></div>
     {% endif %}
     <div class="index-project">
         <div class="index-project-left">
-            <h2 class="index-project-title">{{ project.header }}</h2>
-            {% image project.image, project.imageAlt, "project-image", "lazy", "90vw"%}
+            <h2 class="index-project-title">{{ project.header }}</h2> {# relevant title for project #}
+            {% image project.image, project.imageAlt, "project-image", "lazy", "90vw"%} {# shortcode using eleventy image plugin #}
         </div>
         <div class="index-project-right">
+            {# link to live project and github code #}
             <p>See it in action <a href="{{ project.url }}" target="_blank">here</a> or examine its <a href="{{ project.gitRepo }}" target="_blank">code</a>.</p>
-            {% include project.templateContent %}
+            {% include project.templateContent %} {# description content for project #}
         </div>
     </div>
 {% endfor %}
-<!-- link to the code for this site -->
+{# link to the code for this site #}
 <div class="home-my-website-code">
     <p>Lastly, if you're interested in the code for my portfolio website, click <a href="https://github.com/etcheekes/ec-portfolio" target="_blank">here</a>. I used the same technologies used for the multi-page website.</p>
 </div>
