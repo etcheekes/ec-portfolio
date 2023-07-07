@@ -15,13 +15,12 @@ function revealText(element, text, selectOption) {
 }
 
 function revealProjectText(selectOptionsId, technicalExpId, innerWorkingsId) {
-    console.log("reveal function linked")
     // reference select options and hidden information
     const selectOption = document.querySelector(selectOptionsId);
     const technicalExp = document.querySelector(technicalExpId);
     const innerWorkings = document.querySelector(innerWorkingsId);
 
-    // reveal text
+    // reveal text using revealText() function
     selectOption.addEventListener("change", () => {
         revealText(technicalExp, "technical-experience", selectOption);
         revealText(innerWorkings, "inner-workings", selectOption);
@@ -36,7 +35,7 @@ function revealAboutText(selectOptionsId, programmingJourneyId, decisionToProgra
     const decisionToProgram = document.querySelector(decisionToProgramId);
     const education = document.querySelector(educationId);
 
-    // reveal text
+    // reveal text using revealText() function
     selectOptionAbout.addEventListener("change", () => {
         revealText(programmingJourney, "programming-journey", selectOptionAbout);
         revealText(decisionToProgram, "decision-to-program", selectOptionAbout);

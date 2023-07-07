@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navbarToggle.classList.toggle("active");
     });
 
-    // toggle off cross if screen width changes
+    // toggle off cross if screen width increases past breaking point
     window.addEventListener('resize', () => {
         const screenWidth = window.innerWidth;
         if (screenWidth >= breakpointWidth && navbarToggle.classList.contains("active")) {
