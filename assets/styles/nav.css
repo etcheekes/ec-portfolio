@@ -1,4 +1,4 @@
-.header {
+.header { /* header stick at top of viewport and ensure always visible */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -18,7 +18,7 @@
 }
 
 .nav-elements li:nth-child(2) {
-    margin-left: auto;
+    margin-left: auto; /* create space between portfolio and other nav links */
 }
 
 .nav-link {

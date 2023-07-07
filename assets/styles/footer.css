@@ -1,16 +1,18 @@
+/* layout */
 .footer-content {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
+.footer-text {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* visual separator from main */
 .footer-divider {
     margin-top: 4rem;
     grid-column: 4 / -4;
     border-bottom: dashed var(--primaryColorLight);
-}
-
-.footer-text {
-    grid-column: 1 / -1;
-    text-align: center;
 }

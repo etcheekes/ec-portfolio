@@ -1,11 +1,12 @@
 
+/* layout for home container */
 .home-container {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
-/* introduction section */
+/* introduction section layout */
 
 .home-introduction {
     grid-column: 2 / -2;
@@ -23,15 +24,15 @@
     margin-bottom: 2.5rem;
 }
 
-/* project sections */
+/* project sections layout */
 
-.index-portfolio-header {
+.index-portfolio-header { 
     grid-column: 2 / -2;
     text-align: center;
     margin-bottom: 0;
 }
 
-.index-portfolio-header-underline {
+.index-portfolio-header-underline { 
     grid-column: 6 / -6;
     border-bottom: dashed var(--primaryColorLight);
     margin-bottom: 3rem;
@@ -59,7 +60,9 @@
     width: 100%;
 }
 
-.home-my-website-code {
+/* layout for section linking to code of my portfolio website */
+
+.home-my-website-code { 
     grid-column: 2 / -2;
     justify-self: center;
     margin-top: 5rem;
@@ -84,6 +87,7 @@
 }
 
 @media screen and (min-width: 1200px) { /* larger devices */
+    /* split project section into two columns */
     .index-project-left,
     .index-project-right {
         grid-column: span 6;

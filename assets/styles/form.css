@@ -1,18 +1,21 @@
+/* layout */
 .contact-container {
     grid-column: 2 / 12;
 	display: flex;
 	justify-content: center;
 }
 
-.contact-form-title {
-    color: var(--primary);
-    border-bottom: 1px solid var(--primaryColorLight);
-}
-
 .contact-form {
     display: flex;
     flex-direction: column;
     width: 40rem;
+}
+
+/* styling form content */
+
+.contact-form-title {
+    color: var(--primary);
+    border-bottom: 1px solid var(--primaryColorLight);
 }
 
 .contact-form-label {
@@ -40,6 +43,8 @@
     background-color: var(--primaryColor);
     margin-top: 1rem;
 }
+
+/* hover effect */
 
 .contact-form-bt-submit:hover {
     background-color: var(--primaryColorLight);
