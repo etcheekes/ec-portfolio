@@ -85,4 +85,8 @@
         top: 40vh;
         width: 100%;
     }
+    .index-project {
+        grid-column: 2 / -2;
+        gap: 3rem;
+    }
 }
